@@ -2035,3 +2035,46 @@ local window = library:AddWindow("Project V1", {
 
 local features = window:AddTab("Features")
 features:Show()
+
+local PlayerDrop = features:AddDropdown("Select Player", function(Value)
+    SelectPlayerName = Value
+end)
+local Playerslist = {}
+for _, Plr in pairs(game:GetService("Players"):GetPlayers()) do
+    table.insert(Playerslist, Plr.Name)
+end
+for _, AddPlr in ipairs(Playerslist) do
+    PlayerDrop:Add(AddPlr)
+end
+local Update = features:AddLabel("")
+local Update1 = features:AddLabel("")
+local Update2 = features:AddLabel("")
+local Update3 = features:AddLabel("")
+local Update4 = features:AddLabel("")
+local Update5 = features:AddLabel("")
+task.spawn(function()
+    while task.wait() do
+        local player = game.Players:FindFirstChild(SelectPlayerName)
+        if player and player:FindFirstChild("leaderstats") then
+            local leaderstats = player.leaderstats
+            if leaderstats:FindFirstChild("Strength") then
+                Update:Set("Strength: " .. leaderstats.Strength.Value)
+            end
+            if leaderstats:FindFirstChild("Gems") then
+                Update1:Set("Gems: " .. leaderstats.Gems.Value)
+            end
+            if leaderstats:FindFirstChild("Rebirths") then
+                Update2:Set("Rebirths: " .. leaderstats.Rebirths.Value)
+            end
+            if leaderstats:FindFirstChild("Durability") then
+                Update3:Set("Durability: " .. leaderstats.Durability.Value)
+            end
+            if leaderstats:FindFirstChild("Agility") then
+                Update4:Set("Agility: " .. leaderstats.Agility.Value)
+            end
+            if leaderstats:FindFirstChild("Kills") then
+                Update5:Set("Kills: " .. leaderstats.Kills.Value)
+            end
+        end
+    end
+end)
