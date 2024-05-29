@@ -2029,7 +2029,7 @@ end
 --script begin 
 local window = library:AddWindow("Project V1", {
 	main_color = Color3.fromRGB(41, 74, 122),
-	min_size = Vector2.new(250, 346),
+	min_size = Vector2.new(650, 550),
 	can_resize = false,
 })
 
@@ -2077,4 +2077,10 @@ task.spawn(function()
             end
         end
     end
+end)
+
+features:AddButton("Remove Anticheat",function()
+	game:GetService("Players").LocalPlayer.PlayerGui.Extra.AntiSploitClient2:Destroy()
+	wait(1)
+	game:GetService("Players").LocalPlayer.PlayerGui.Extra.AntiSploitClient:Destroy()
 end)
