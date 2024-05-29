@@ -1157,7 +1157,7 @@ function library:AddWindow(title, options)
 							label.Text = Value
 						end
 						
-						return label, Update
+						return Update
 					end
 
 					function tab_data:AddButton(button_text, callback) -- [Button]
