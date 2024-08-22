@@ -1,7 +1,1 @@
-local _env = getgenv and getgenv() or {}
 
-local Ver = "Version: 3.5.0"
-local Dis = "discord.com"
-
-_env.Discord = Dis
-_env.Version = Ver
