@@ -146,18 +146,17 @@ function NEVERLOSE:Theme(name)
 		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(2, 5, 22)
 	end
 
-        if name == "discord_boost_rose" then
-    NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(54, 57, 63)
-    NEVERLOSE.Themes.BlackColor = Color3.fromRGB(32, 34, 37)
-    NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(47, 49, 54)
-    NEVERLOSE.Themes.TraceColor = Color3.fromRGB(42, 44, 48)
-    NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 102, 178) -- Rose vif
-    NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(255, 153, 204) -- Rose plus clair
-    NEVERLOSE.Themes.SectionColor = Color3.fromRGB(44, 47, 51)
-    NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(35, 39, 42)
-    NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(46, 49, 54)
-        end
-
+        if name == "nightly" then
+	NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(43, 43, 43)
+	NEVERLOSE.Themes.BlackColor = Color3.fromRGB(16, 16, 16)
+	NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(47, 47, 47)
+	NEVERLOSE.Themes.TraceColor = Color3.fromRGB(150, 100, 150) -- Ajout d'une nuance de rose
+	NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 105, 180) -- Rose vif
+	NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(85, 55, 85) -- Rose plus foncé
+	NEVERLOSE.Themes.SectionColor = Color3.fromRGB(26, 26, 26)
+	NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(100, 50, 100) -- Teinte rose-violet
+	NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(50, 25, 50) -- Rose sombre
+end
 
 	if name == "dark" then
 		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(37, 37, 37)
