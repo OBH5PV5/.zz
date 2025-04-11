@@ -171,6 +171,19 @@ end
 	end
 end
 
+if name == "CSTM" then
+	NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(20, 20, 20)
+	NEVERLOSE.Themes.BlackColor = Color3.fromRGB(0, 0, 0)
+	NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(0, 0, 0)
+	NEVERLOSE.Themes.TraceColor = Color3.fromRGB(40, 40, 40)
+	NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 255, 255)
+	NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(60, 60, 60)
+	NEVERLOSE.Themes.SectionColor = Color3.fromRGB(10, 10, 10)
+	NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(70, 70, 70)
+	NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(5, 5, 5)
+end
+
+
 function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	local WindowFunctinos={}
 	local ToggleUI=false
